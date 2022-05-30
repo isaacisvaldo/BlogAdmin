@@ -1,0 +1,22 @@
+<%- include ../../partials/header.ejs %>
+<%- include  ../../partials/homenavbar.ejs %>
+<div class="container">
+    <hr>
+    <div class="card mt-5">
+        <div class="card-header">
+           <h2>Login</h2> 
+        </div>
+        <div class="card-body">
+            <form action="/authenticate" method="post">
+           
+           <input type="email" class="form-control" placeholder="Informe o email" required name="email"><br>
+           <input type="password" class="form-control" placeholder="senha..." required name="password"><br>
+           <button class="btn btn-success btn-block" type="submit">Iniciar</button>
+
+
+
+            </form>
+        </div>
+    </div>
+</div>
+<%- include ../../partials/footer.ejs %>
